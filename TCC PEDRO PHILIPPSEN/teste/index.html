@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club da Barba | Unidade da Praça</title>
+  <meta name="description" content="Club da Barba: atendimento personalizado, acolhedor e acessível no bairro Santa Isabel, em Viamão. Agende seu horário.">
+  <meta name="theme-color" content="#090909">
+  <link rel="icon" href="./logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<a class="skip" href="#inicio">Pular para o conteúdo</a>
+
+<!-- CABEÇALHO -->
+<header class="topo">
+  <div class="wrap barra">
+
+    <a class="marca" href="#inicio" aria-label="Club da Barba, início">
+      <img src="./logo.jpg" alt="">
+      <span>Club da Barba</span>
+    </a>
+
+    <nav id="menu" aria-label="Menu principal">
+      <a href="#atendimento">Atendimento</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Espaço</a>
+      <a href="#feedbacks">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn-pequeno" href="#agendar">Agendar</a>
+
+    <button class="ico" id="burger" type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="menu">
+      ☰
+    </button>
+
+  </div>
+</header>
+
+<!-- CENTRAL DE ACESSIBILIDADE -->
+<div class="acessibilidade">
+
+  <button class="acessibilidade-botao"
+    id="abrirAcessibilidade"
+    type="button"
+    aria-expanded="false"
+    aria-controls="painelAcessibilidade">
+
+    <span aria-hidden="true">♿</span>
+    <span>Acessibilidade</span>
+
+  </button>
+
+  <section class="acessibilidade-painel"
+    id="painelAcessibilidade"
+    aria-label="Opções de acessibilidade"
+    hidden>
+
+    <div class="acessibilidade-topo">
+      <h2>Acessibilidade</h2>
+
+      <button type="button"
+        id="fecharAcessibilidade"
+        aria-label="Fechar painel">
+        ✕
+      </button>
+    </div>
+
+    <p>Personalize a visualização e o conforto durante a navegação.</p>
+
+    <div class="acessibilidade-grupo">
+      <h3>Visualização</h3>
+
+      <button type="button" data-acessibilidade="aumentar">
+        A+ Aumentar texto
+      </button>
+
+      <button type="button" data-acessibilidade="diminuir">
+        A− Diminuir texto
+      </button>
+
+      <button type="button"
+        data-acessibilidade="contraste"
+        aria-pressed="false">
+        Alto contraste
+      </button>
+    </div>
+
+    <div class="acessibilidade-grupo">
+      <h3>Conforto</h3>
+
+      <button type="button"
+        data-acessibilidade="leitura"
+        aria-pressed="false">
+        Leitura confortável
+      </button>
+
+      <button type="button"
+        data-acessibilidade="movimento"
+        aria-pressed="false">
+        Reduzir animações
+      </button>
+    </div>
+
+    <button type="button"
+      class="acessibilidade-reset"
+      data-acessibilidade="restaurar">
+      Restaurar configurações
+    </button>
+
+    <p class="nota-acessibilidade">
+      O VLibras também está disponível no botão flutuante da página.
+    </p>
+
+  </section>
+</div>
+
+<main id="inicio">
+
+  <!-- INÍCIO -->
+  <section class="hero">
+    <div class="wrap hero-conteudo">
+
+      <p class="status" id="status" aria-live="polite">
+        Verificando horário…
+      </p>
+
+      <p class="sobretitulo">
+        CLUB DA BARBA · UNIDADE DA PRAÇA
+      </p>
+
+      <h1>Seu corte,<br><em>sem pressa.</em></h1>
+
+      <p class="lead">
+        Um espaço para cuidar do visual com atenção de verdade.
+        Aqui, cada pessoa tem seu tempo, suas preferências
+        e seu jeito de se sentir confortável.
+      </p>
+
+      <div class="acoes">
+        <a class="btn" href="#agendar">Agendar horário</a>
+        <a class="btn vazio" href="#atendimento">
+          Conhecer nosso atendimento
+        </a>
+      </div>
+
+      <ul class="selos">
+        <li>Segunda a sábado, 9h às 20h</li>
+        <li>Sem fechar ao meio-dia</li>
+        <li>Atendimento personalizado</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ATENDIMENTO -->
+  <section class="sec atendimento" id="atendimento">
+
+    <div class="wrap">
+
+      <div class="cabecalho-sec">
+        <p class="sobretitulo">NOSSO DIFERENCIAL</p>
+
+        <h2>Um atendimento que começa por ouvir.</h2>
+
+        <p class="sub">
+          Nem todo mundo se sente confortável da mesma maneira
+          em uma barbearia. Por isso, buscamos adaptar o atendimento
+          às necessidades de cada cliente, respeitando seu tempo,
+          suas preferências e seus limites.
+        </p>
+      </div>
+
+      <div class="atendimento-grid">
+
+        <article class="diferencial">
+          <span class="numero">01</span>
+          <h3>Mais tempo, se precisar</h3>
+          <p>
+            Podemos organizar um horário com mais tranquilidade,
+            sem tratar o atendimento como uma corrida contra o relógio.
+          </p>
+        </article>
+
+        <article class="diferencial">
+          <span class="numero">02</span>
+          <h3>Um ambiente mais confortável</h3>
+          <p>
+            Você pode avisar se prefere menos conversa,
+            menos estímulos, música desligada ou um espaço mais calmo.
+          </p>
+        </article>
+
+        <article class="diferencial">
+          <span class="numero">03</span>
+          <h3>Cuidado em cada fase</h3>
+          <p>
+            Crianças, idosos e pessoas com deficiência merecem
+            atenção individual, comunicação respeitosa e um
+            atendimento combinado com antecedência.
+          </p>
+        </article>
+
+        <article class="diferencial">
+          <span class="numero">04</span>
+          <h3>Acessibilidade e respeito</h3>
+          <p>
+            Temos rampa de acesso e estamos abertos a conversar
+            sobre adaptações para tornar a experiência melhor
+            para cada pessoa.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="atendimento-final">
+        Se você precisa de alguma adaptação, conte para nós
+        no formulário. Vamos ler suas observações e entrar
+        em contato para alinhar os detalhes.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section class="sec" id="equipe">
+
+    <div class="wrap">
+
+      <p class="sobretitulo">QUEM VAI TE ATENDER</p>
+
+      <h2>Conheça nossa equipe</h2>
+
+      <p class="sub">
+        Escolha seu profissional e encontre um horário
+        que funcione para você.
+      </p>
+
+      <div class="grade" id="equipeGrade"></div>
+
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="sec grafite" id="servicos">
+
+    <div class="wrap">
+
+      <p class="sobretitulo">CUIDADO E ESTILO</p>
+
+      <h2>Serviços</h2>
+
+      <p class="sub">
+        Confira algumas das opções disponíveis. Se tiver dúvida
+        sobre valores ou sobre qual serviço escolher, fale com
+        a equipe antes de agendar.
+      </p>
+
+      <div class="servicos-grid" id="tabela"></div>
+
+      <div class="aviso-servicos">
+        <strong>Antes de agendar</strong>
+        <p>
+          Os valores indicados podem variar conforme o procedimento.
+          Confirme o preço final com a barbearia. Planos mensais
+          e combos estão disponíveis sob consulta.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO -->
+  <section class="sec" id="agendar">
+
+    <div class="wrap estreito">
+
+      <p class="sobretitulo">RESERVE SEU MOMENTO</p>
+
+      <h2>Agende seu horário</h2>
+
+      <p class="sub">
+        Escolha o profissional, o serviço, a data e um dos
+        horários disponíveis.
+      </p>
+
+      <form class="cartao" id="form" novalidate>
+
+        <div class="campo">
+          <label for="barbeiro">
+            <b class="passo">1</b>Barbeiro
+          </label>
+          <select id="barbeiro" required></select>
+        </div>
+
+        <div class="campo">
+          <label for="servico">
+            <b class="passo">2</b>Serviço
+          </label>
+          <select id="servico" required></select>
+        </div>
+
+        <div class="campo">
+          <label for="data">
+            <b class="passo">3</b>Escolha o dia
+          </label>
+
+          <input type="date" id="data" required>
+
+          <small>
+            Use o calendário para escolher uma data.
+            Não atendemos aos domingos.
+          </small>
+        </div>
+
+        <div class="campo">
+
+          <span class="rot" id="rotHora">
+            <b class="passo">4</b>Horários disponíveis
+          </span>
+
+          <div class="horas" id="horas"
+            role="group"
+            aria-labelledby="rotHora">
+
+            <p class="dica">
+              Escolha o barbeiro e a data para consultar os horários.
+            </p>
+
+          </div>
+
+          <p class="legenda-horarios">
+            Horários indisponíveis aparecem desativados.
+          </p>
+
+        </div>
+
+        <div class="campo">
+          <label for="nome">
+            <b class="passo">5</b>Seu nome
+          </label>
+
+          <input id="nome"
+            autocomplete="name"
+            maxlength="80"
+            required
+            placeholder="Digite seu nome">
+        </div>
+
+        <div class="campo">
+          <label for="tel">WhatsApp com DDD</label>
+
+          <input id="tel"
+            type="tel"
+            autocomplete="tel"
+            maxlength="20"
+            required
+            placeholder="(51) 90000-0000">
+        </div>
+
+        <!-- PREFERÊNCIAS DE ATENDIMENTO -->
+        <fieldset class="preferencias">
+
+          <legend>
+            <b class="passo">6</b>
+            Como podemos tornar seu atendimento melhor?
+          </legend>
+
+          <p class="ajuda">
+            Marque as opções que fazem sentido para você.
+            Todas são opcionais.
+          </p>
+
+          <label class="opcao">
+            <input type="checkbox" name="preferencia"
+              value="Prefiro um ambiente sem música">
+            Prefiro um ambiente sem música
+          </label>
+
+          <label class="opcao">
+            <input type="checkbox" name="preferencia"
+              value="Prefiro um ambiente mais silencioso">
+            Prefiro um ambiente mais silencioso
+          </label>
+
+          <label class="opcao">
+            <input type="checkbox" name="preferencia"
+              value="Tenho sensibilidade a sons ou luzes">
+            Tenho sensibilidade a sons ou luzes
+          </label>
+
+          <label class="opcao">
+            <input type="checkbox" name="preferencia"
+              value="Preciso de mais tempo para o atendimento">
+            Preciso de mais tempo para o atendimento
+          </label>
+
+          <label class="opcao">
+            <input type="checkbox" name="preferencia"
+              value="Prefiro pouca conversa durante o atendimento">
+            Prefiro pouca conversa durante o atendimento
+          </label>
+
+          <label class="opcao">
+            <input type="checkbox" name="preferencia"
+              value="Preciso de auxílio ou adaptação de acessibilidade">
+            Preciso de auxílio ou adaptação de acessibilidade
+          </label>
+
+          <div class="campo observacoes">
+            <label for="observacoes">
+              Outras necessidades ou observações
+            </label>
+
+            <textarea id="observacoes"
+              rows="4"
+              maxlength="600"
+              placeholder="Conte aqui, se desejar, como podemos preparar o atendimento para você."></textarea>
+          </div>
+
+          <p class="privacidade">
+            Compartilhe apenas as informações necessárias
+            para organizarmos seu atendimento.
+          </p>
+
+        </fieldset>
+
+        <p class="erro" id="erro" role="alert" hidden></p>
+
+        <button class="btn btn-largo" type="submit">
+          Continuar para confirmação
+        </button>
+
+        <p class="nota-form">
+          Nesta versão de demonstração, as reservas ficam salvas
+          somente neste navegador. Para reservas compartilhadas
+          entre celulares, será necessária uma conexão com banco de dados.
+        </p>
+
+      </form>
+
+      <!-- CONFIRMAÇÃO E PAGAMENTO -->
+      <section class="cartao confirmacao"
+        id="ok"
+        tabindex="-1"
+        hidden
+        aria-live="polite">
+
+        <p class="sobretitulo">QUASE LÁ</p>
+
+        <h3>Confira seu agendamento</h3>
+
+        <dl id="resumoAgendamento"></dl>
+
+        <div class="campo">
+          <label for="pagamento">Como prefere pagar?</label>
+
+          <select id="pagamento">
+            <option value="">Selecione uma forma de pagamento</option>
+            <option value="Pix no momento do atendimento">
+              Pix no momento do atendimento
+            </option>
+            <option value="Pagamento presencial na barbearia">
+              Pagamento presencial na barbearia
+            </option>
+            <option value="Combinar pelo WhatsApp">
+              Combinar pelo WhatsApp
+            </option>
+          </select>
+        </div>
+
+        <div class="acoes">
+          <button class="btn" type="button" id="finalizarAgendamento">
+            Confirmar agendamento
+          </button>
+
+          <button class="btn vazio" type="button" id="voltarEdicao">
+            Voltar e editar
+          </button>
+        </div>
+
+        <p class="nota-form">
+          A escolha indica sua preferência. Não há cobrança automática pelo site.
+        </p>
+
+      </section>
+
+      <!-- SUCESSO -->
+      <section class="cartao ok"
+        id="sucesso"
+        tabindex="-1"
+        hidden
+        aria-live="polite">
+
+        <h3>Agendamento registrado!</h3>
+
+        <p id="mensagemSucesso"></p>
+
+        <div class="acoes">
+
+          <a class="btn"
+            id="enviarWhats"
+            href="#"
+            target="_blank"
+            rel="noopener">
+            Enviar detalhes pelo WhatsApp
+          </a>
+
+          <button class="btn vazio" type="button" id="novo">
+            Fazer outro agendamento
+          </button>
+
+          <button class="btn-cancelar" type="button" id="cancelarUltimo">
+            Cancelar este agendamento
+          </button>
+
+        </div>
+
+      </section>
+
+      <!-- MEUS AGENDAMENTOS -->
+      <section class="cartao meus-agendamentos"
+        id="meusAgendamentosSec"
+        hidden
+        aria-live="polite">
+
+        <h3>Agendamentos salvos</h3>
+
+        <p class="dica">
+          Gerencie ou cancele os horários registrados neste navegador.
+        </p>
+
+        <div id="listaAgendamentos"></div>
+
+      </section>
+
+    </div>
+  </section>
+
+  <!-- ESPAÇO -->
+  <section class="sec" id="galeria">
+
+    <div class="wrap">
+
+      <p class="sobretitulo">POR DENTRO DA BARBEARIA</p>
+
+      <h2>Um espaço para cuidar de você</h2>
+
+      <p class="sub">
+        A Unidade da Praça foi pensada para unir cuidado,
+        estilo e acolhimento. Um ambiente de barbearia,
+        com estrutura para você se sentir à vontade, conversar
+        sobre o que deseja e aproveitar seu momento.
+        E, se alguma característica do ambiente não for confortável,
+        queremos saber para tentar adaptar a experiência.
+      </p>
+
+      <div class="galeria">
+
+        <img src="./profissionais.jpg"
+          alt="Equipe do Club da Barba na barbearia"
+          loading="lazy">
+
+        <img src="./espaço.jpg"
+          alt="Ambiente interno do Club da Barba"
+          loading="lazy">
+
+        <img src="./roger.jpg"
+          alt="Atendimento realizado por um barbeiro"
+          loading="lazy">
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEEDBACKS -->
+  <section class="sec grafite" id="feedbacks">
+
+    <div class="wrap feedback-layout">
+
+      <div>
+
+        <p class="sobretitulo">SUA OPINIÃO IMPORTA</p>
+
+        <h2>Como foi sua experiência?</h2>
+
+        <p class="sub">
+          Seu comentário ajuda a equipe a entender o que está
+          funcionando e o que podemos melhorar no atendimento.
+        </p>
+
+        <form class="cartao feedback-form"
+          id="formFeedback"
+          novalidate>
+
+          <div class="campo">
+            <label for="nota">Sua avaliação</label>
+
+            <select id="nota" required>
+              <option value="">Escolha uma nota</option>
+              <option value="5">★★★★★ — Excelente</option>
+              <option value="4">★★★★☆ — Muito bom</option>
+              <option value="3">★★★☆☆ — Bom</option>
+              <option value="2">★★☆☆☆ — Pode melhorar</option>
+              <option value="1">★☆☆☆☆ — Não foi bom</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="comentario">Comentário</label>
+
+            <textarea id="comentario"
+              rows="4"
+              maxlength="500"
+              required
+              placeholder="Conte como foi sua experiência..."></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="nomeFeedback">Nome (opcional)</label>
+
+            <input id="nomeFeedback"
+              maxlength="60"
+              placeholder="Como podemos identificar você?">
+          </div>
+
+          <p class="erro"
+            id="erroFeedback"
+            role="alert"
+            hidden></p>
+
+          <button class="btn" type="submit">
+            Enviar avaliação
+          </button>
+
+          <p class="nota-form">
+            Demonstração: as avaliações ficam salvas somente
+            neste navegador e não são publicadas para outros visitantes.
+          </p>
+
+        </form>
+
+      </div>
+
+      <div class="feedback-lista">
+
+        <h3>O que os clientes dizem</h3>
+
+        <p class="dica" id="semFeedback">
+          As avaliações enviadas neste dispositivo aparecerão aqui.
+        </p>
+
+        <div id="listaFeedbacks" aria-live="polite"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="sec" id="contato">
+
+    <div class="wrap contato-grid">
+
+      <div>
+
+        <p class="sobretitulo">ESTAMOS POR AQUI</p>
+
+        <h2>Venha nos visitar</h2>
+
+        <ul class="info">
+
+          <li>
+            <b>Localização</b>
+            <span>Bairro Santa Isabel, Viamão – RS</span>
+          </li>
+
+          <li>
+            <b>Horário</b>
+            <span>Segunda a sábado, das 9h às 20h</span>
+          </li>
+
+          <li>
+            <b>Estacionamento</b>
+            <span>Não temos estacionamento privado.</span>
+          </li>
+
+          <li>
+            <b>Acessibilidade</b>
+            <span>
+              Rampa de acesso. Se precisar de alguma adaptação,
+              fale com a equipe.
+            </span>
+          </li>
+
+        </ul>
+
+        <!-- ÍCONES E REDES SOCIAIS -->
+        <div class="social-links">
+
+          <a class="social-link"
+            id="zap"
+            href="#"
+            target="_blank"
+            rel="noopener">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.5 0 .2 5.3.2 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a12 12 0 0 0 5.7 1.4h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.1-1.2-6.1-3.5-8.3ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 1 1 8.4 4.7Zm5.3-7.3c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.2-.3-.3-.6-.4Z"/>
+            </svg>
+
+            WhatsApp
+          </a>
+
+          <a class="social-link"
+            id="mapa"
+            href="#"
+            target="_blank"
+            rel="noopener">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/>
+            </svg>
+
+            Google Maps
+          </a>
+
+          <a class="social-link"
+            id="insta"
+            href="#"
+            target="_blank"
+            rel="noopener">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.1A2.9 2.9 0 0 0 4.1 7v10A2.9 2.9 0 0 0 7 19.9h10a2.9 2.9 0 0 0 2.9-2.9V7A2.9 2.9 0 0 0 17 4.1H7Zm5 2.4a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 2.1a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8Zm5.8-3.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Z"/>
+            </svg>
+
+            Instagram
+          </a>
+
+        </div>
+
+      </div>
+
+      <img class="fachada"
+        src="./faxada.jpg"
+        alt="Fachada do Club da Barba"
+        loading="lazy">
+
+    </div>
+  </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer>
+  <div class="wrap">
+    Club da Barba · Unidade da Praça ·
+    Bairro Santa Isabel, Viamão – RS ·
+    ©️ <span id="ano"></span>.
+  </div>
+</footer>
+
+<!-- WIDGET OFICIAL VLIBRAS -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div vw-plugin-top-wrapper></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
